@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curso Manicurista Master</title>
+<title>Manicurista Master</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -25,44 +28,78 @@ fbq('track', 'PageView');
 <style>
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:'Poppins', sans-serif;
 background:#ffffff;
 color:#ff4da6;
 text-align:center;
 }
 
 .container{
-padding:50px 20px;
-max-width:600px;
+padding:60px 20px;
+max-width:650px;
 margin:auto;
 }
 
 h1{
-font-size:30px;
+font-size:34px;
+font-weight:700;
 margin-bottom:20px;
 }
 
-p{
-font-size:18px;
-line-height:1.6;
+.subtitle{
+font-size:20px;
+color:#555;
+margin-bottom:35px;
+}
+
+.features{
+text-align:left;
+margin:30px 0;
+}
+
+.features li{
+list-style:none;
 margin-bottom:15px;
+font-size:18px;
+color:#444;
+padding-left:30px;
+position:relative;
+}
+
+.features li::before{
+content:"💅";
+position:absolute;
+left:0;
 }
 
 .button{
 display:inline-block;
-margin-top:30px;
-padding:15px 30px;
-background:#7b2cbf;
+margin-top:35px;
+padding:18px 35px;
+background:linear-gradient(145deg,#9d4edd,#7b2cbf);
 color:white;
 text-decoration:none;
-font-size:20px;
-border-radius:8px;
-font-weight:bold;
-transition:0.3s;
+font-size:22px;
+border-radius:12px;
+font-weight:600;
+box-shadow:0 6px 0 #5a189a, 0 8px 20px rgba(0,0,0,0.2);
+transition:all 0.2s ease;
 }
 
 .button:hover{
-background:#5a189a;
+transform:translateY(3px);
+box-shadow:0 3px 0 #5a189a, 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.badge{
+display:inline-block;
+background:#ffe0f0;
+color:#ff4da6;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+margin-bottom:20px;
+font-weight:600;
 }
 </style>
 
@@ -71,18 +108,21 @@ background:#5a189a;
 
 <div class="container">
 
-<h1>💅 Convertite en Manicurista Profesional Desde Casa</h1>
+<div class="badge">CURSO ONLINE CERTIFICADO</div>
 
-<p>
-Aprendé desde cero técnicas profesionales de uñas y empezá a generar ingresos reales trabajando desde tu casa.
+<h1>Convertite en Manicurista Profesional Desde Casa</h1>
+
+<p class="subtitle">
+Aprendé desde cero técnicas profesionales y empezá a generar ingresos reales haciendo uñas.
 </p>
 
-<p>
-✔ Curso completo paso a paso<br>
-✔ Acceso inmediato<br>
-✔ Certificación incluida<br>
-✔ Garantía de 7 días
-</p>
+<ul class="features">
+<li>Curso completo paso a paso desde nivel inicial</li>
+<li>Acceso inmediato y para siempre</li>
+<li>Certificación incluida</li>
+<li>Ideal para emprender desde tu casa</li>
+<li>Garantía de 7 días</li>
+</ul>
 
 <a class="button" href="https://go.hotmart.com/Q104756107A" target="_blank">
 QUIERO VER EL CURSO
