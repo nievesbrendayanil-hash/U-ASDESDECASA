@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manicurista Master</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,33 +22,55 @@ s.parentNode.insertBefore(t,s)}
 fbq('init', '792216930334417');
 fbq('track', 'PageView');
 </script>
-<!-- End Meta Pixel Code -->
 
 <style>
 body{
 margin:0;
-font-family:'Poppins', sans-serif;
-background:#ffffff;
-color:#ff4da6;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#ffe6f2,#f9d5ff);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.card{
+background:white;
+max-width:700px;
+width:90%;
+padding:50px 30px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
 text-align:center;
+animation:fadeIn 1s ease;
 }
 
-.container{
-padding:60px 20px;
-max-width:650px;
-margin:auto;
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
 }
 
-h1{
-font-size:34px;
-font-weight:700;
+.badge{
+background:#ffebf5;
+color:#ff4da6;
+display:inline-block;
+padding:8px 18px;
+border-radius:30px;
+font-size:14px;
+font-weight:600;
 margin-bottom:20px;
 }
 
+h1{
+color:#ff4da6;
+font-size:34px;
+margin-bottom:15px;
+}
+
 .subtitle{
-font-size:20px;
 color:#555;
-margin-bottom:35px;
+font-size:18px;
+margin-bottom:30px;
 }
 
 .features{
@@ -60,71 +81,85 @@ margin:30px 0;
 .features li{
 list-style:none;
 margin-bottom:15px;
-font-size:18px;
-color:#444;
+font-size:17px;
 padding-left:30px;
 position:relative;
+color:#444;
 }
 
 .features li::before{
-content:"💅";
+content:"✨";
 position:absolute;
 left:0;
 }
 
+.testimonials{
+margin-top:30px;
+font-size:15px;
+color:#666;
+font-style:italic;
+}
+
+.timer{
+margin-top:20px;
+font-weight:600;
+color:#7b2cbf;
+}
+
 .button{
 display:inline-block;
-margin-top:35px;
-padding:18px 35px;
+margin-top:30px;
+padding:18px 40px;
 background:linear-gradient(145deg,#9d4edd,#7b2cbf);
 color:white;
 text-decoration:none;
 font-size:22px;
 border-radius:12px;
 font-weight:600;
-box-shadow:0 6px 0 #5a189a, 0 8px 20px rgba(0,0,0,0.2);
+box-shadow:0 8px 0 #5a189a;
 transition:all 0.2s ease;
 }
 
 .button:hover{
-transform:translateY(3px);
-box-shadow:0 3px 0 #5a189a, 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.badge{
-display:inline-block;
-background:#ffe0f0;
-color:#ff4da6;
-padding:8px 15px;
-border-radius:20px;
-font-size:14px;
-margin-bottom:20px;
-font-weight:600;
+transform:translateY(4px);
+box-shadow:0 4px 0 #5a189a;
 }
 </style>
-
 </head>
+
 <body>
 
-<div class="container">
+<div class="card">
 
 <div class="badge">CURSO ONLINE CERTIFICADO</div>
 
 <h1>Convertite en Manicurista Profesional Desde Casa</h1>
 
 <p class="subtitle">
-Aprendé desde cero técnicas profesionales y empezá a generar ingresos reales haciendo uñas.
+Aprendé desde cero y empezá a generar ingresos reales haciendo uñas desde tu hogar.
 </p>
 
 <ul class="features">
-<li>Curso completo paso a paso desde nivel inicial</li>
+<li>Curso completo paso a paso</li>
 <li>Acceso inmediato y para siempre</li>
 <li>Certificación incluida</li>
-<li>Ideal para emprender desde tu casa</li>
+<li>Ideal para emprender desde casa</li>
 <li>Garantía de 7 días</li>
 </ul>
 
-<a class="button" href="https://go.hotmart.com/Q104756107A" target="_blank">
+<div class="testimonials">
+“En 2 meses recuperé la inversión y ya tengo clientas fijas.” – Mariana G.<br><br>
+“Nunca pensé que podría vivir de esto desde casa.” – Carla R.
+</div>
+
+<div class="timer">
+Oferta disponible por tiempo limitado ⏳
+</div>
+
+<a class="button" 
+href="https://go.hotmart.com/Q104756107A" 
+target="_blank"
+onclick="fbq('track','InitiateCheckout');">
 QUIERO VER EL CURSO
 </a>
 
